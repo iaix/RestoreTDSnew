@@ -1,0 +1,10 @@
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\bin\Debug\RestoreTDSnew.exe.config
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\bin\Debug\RestoreTDSnew.exe
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\bin\Debug\RestoreTDSnew.pdb
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.csprojAssemblyReference.cache
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.Form1.resources
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.Properties.Resources.resources
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.csproj.GenerateResource.cache
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.csproj.CoreCompileInputs.cache
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.exe
+C:\Users\Kotauke\source\repos\RestoreTDSnew\RestoreTDSnew\obj\Debug\RestoreTDSnew.pdb

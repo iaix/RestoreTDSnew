@@ -130,16 +130,6 @@ namespace RestoreTDSnew
             MessageBox.Show("Do zaimplementowania");
         }
 
-        private void radioLab1_Leave(object sender, EventArgs e)
-        {
-            lab.SetLab1Activity();
-            SetButtonActivity(lab.ControlActivity);
-        }
 
-        private void radioLab3_Leave(object sender, EventArgs e)
-        {
-            lab.SetLab3Activity();
-            SetButtonActivity(lab.ControlActivity);
-        }
     }
 }

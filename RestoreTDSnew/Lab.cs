@@ -30,7 +30,6 @@ namespace RestoreTDSnew
             switch (WhichServer)
             {
                 case 2:
-                    //Form1.textBoxSpik2.Enabled = true;
                     break;
                 case 4:
                     break;
@@ -46,8 +45,11 @@ namespace RestoreTDSnew
             ControlActivity.RadioSpik4_Active = true;
             ControlActivity.RadioSpik5_Active = true;
             ControlActivity.RadioSpik6_Active = false;
+            ControlActivity.TextBoxSpik6_Active = false;
             ControlActivity.RadioSpik7_Active = false;
+            ControlActivity.TextBoxSpik7_Active = false;
             ControlActivity.RadioSpik8_Active = false;
+            ControlActivity.TextBoxSpik8_Active = false;
 
         }
 
@@ -57,8 +59,11 @@ namespace RestoreTDSnew
             ControlActivity.RadioSpik4_Active = true;
             ControlActivity.RadioSpik5_Active = true;
             ControlActivity.RadioSpik6_Active = false;
+            ControlActivity.TextBoxSpik6_Active = false;
             ControlActivity.RadioSpik7_Active = false;
+            ControlActivity.TextBoxSpik7_Active = false;
             ControlActivity.RadioSpik8_Active = false;
+            ControlActivity.TextBoxSpik8_Active = false;
 
         }
 

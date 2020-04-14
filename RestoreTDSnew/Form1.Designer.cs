@@ -92,7 +92,6 @@
             this.radioLab1.Text = "Lab1";
             this.radioLab1.UseVisualStyleBackColor = true;
             this.radioLab1.CheckedChanged += new System.EventHandler(this.radioLab1_CheckedChanged);
-            this.radioLab1.Leave += new System.EventHandler(this.radioLab1_Leave);
             // 
             // radioLab2
             // 
@@ -117,7 +116,6 @@
             this.radioLab3.Text = "Lab3";
             this.radioLab3.UseVisualStyleBackColor = true;
             this.radioLab3.CheckedChanged += new System.EventHandler(this.radioLab3_CheckedChanged);
-            this.radioLab3.Leave += new System.EventHandler(this.radioLab3_Leave);
             // 
             // label1
             // 

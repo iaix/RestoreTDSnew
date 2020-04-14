@@ -32,44 +32,44 @@ namespace RestoreTDSnew
             MessageBox.Show("Do zaimplementowania");
         }
 
-        private readonly Lab obiekt = new Lab();
+        private readonly Lab lab = new Lab();
 
         private void radioLab1_CheckedChanged(object sender, EventArgs e)
         {
-            obiekt.WhichLab = 1;
-            label1.Text = obiekt.WhichLab.ToString();
+            lab.WhichLab = 1;
+            label1.Text = lab.WhichLab.ToString();
         }
 
         private void radioLab2_CheckedChanged(object sender, EventArgs e)
         {
-            obiekt.WhichLab = 2;
-            label1.Text = obiekt.WhichLab.ToString();
+            lab.WhichLab = 2;
+            label1.Text = lab.WhichLab.ToString();
         }
 
         private void radioLab3_CheckedChanged(object sender, EventArgs e)
         {
-            obiekt.WhichLab = 3;
-            label1.Text = obiekt.WhichLab.ToString();
+            lab.WhichLab = 3;
+            label1.Text = lab.WhichLab.ToString();
         }
 
         private void radioSpik2_CheckedChanged(object sender, EventArgs e)
         {
-            obiekt.WhichServer = 2;
-            label1.Text = obiekt.WhichServer.ToString();
+            lab.WhichServer = 2;
+            label1.Text = lab.WhichServer.ToString();
         }
 
         private void radioSpik4_CheckedChanged(object sender, EventArgs e)
         {
-            obiekt.WhichServer = 4;
-            label1.Text = obiekt.WhichServer.ToString();
+            lab.WhichServer = 4;
+            label1.Text = lab.WhichServer.ToString();
 
-            obiekt.pickServer(4);
+            lab.pickServer();
         }
 
         private void radioSpik5_CheckedChanged(object sender, EventArgs e)
         {
-            obiekt.WhichServer = 5;
-            label1.Text = obiekt.WhichServer.ToString();
+            lab.WhichServer = 5;
+            label1.Text = lab.WhichServer.ToString();
         }
 
         private void buttonRestore_Click(object sender, EventArgs e)

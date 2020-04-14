@@ -116,8 +116,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(311, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 17);
+            this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 6;
+            // 
+            // textBoxSpik2
+            // 
+            this.textBoxSpik2.Enabled = false;
+            this.textBoxSpik2.Location = new System.Drawing.Point(118, 21);
+            this.textBoxSpik2.Name = "textBoxSpik2";
+            this.textBoxSpik2.Size = new System.Drawing.Size(238, 22);
+            this.textBoxSpik2.TabIndex = 7;
             // 
             // radioSpik2
             // 
@@ -142,14 +150,6 @@
             this.radioSpik4.Text = "0004SPIK";
             this.radioSpik4.UseVisualStyleBackColor = true;
             this.radioSpik4.CheckedChanged += new System.EventHandler(this.radioSpik4_CheckedChanged);
-            // 
-            // textBoxSpik2
-            // 
-            this.textBoxSpik2.Enabled = false;
-            this.textBoxSpik2.Location = new System.Drawing.Point(118, 21);
-            this.textBoxSpik2.Name = "textBoxSpik2";
-            this.textBoxSpik2.Size = new System.Drawing.Size(238, 22);
-            this.textBoxSpik2.TabIndex = 7;
             // 
             // textBoxSpik4
             // 

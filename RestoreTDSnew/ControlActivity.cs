@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RestoreTDSnew
 {
-    class ControlActivity
+    public class ControlActivity
     {
+
     }
 }

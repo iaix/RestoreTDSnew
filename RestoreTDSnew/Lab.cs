@@ -29,7 +29,7 @@ namespace RestoreTDSnew
             switch (WhichServer)
             {
                 case 2:
-                    Form1.textBoxSpik2.Enabled = true;
+                    //Form1.textBoxSpik2.Enabled = true;
                     break;
                 case 4:
                     break;
@@ -38,7 +38,7 @@ namespace RestoreTDSnew
             }
         }
 
-    }
 
     }
+}
 

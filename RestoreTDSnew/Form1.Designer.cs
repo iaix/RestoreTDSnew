@@ -43,6 +43,12 @@
             this.radioSpik5 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioSpik8 = new System.Windows.Forms.RadioButton();
+            this.textBoxSpik8 = new System.Windows.Forms.TextBox();
+            this.radioSpik7 = new System.Windows.Forms.RadioButton();
+            this.textBoxSpik6 = new System.Windows.Forms.TextBox();
+            this.textBoxSpik7 = new System.Windows.Forms.TextBox();
+            this.radioSpik6 = new System.Windows.Forms.RadioButton();
             this.buttonRestore = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -50,7 +56,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(280, 356);
+            this.buttonClose.Location = new System.Drawing.Point(280, 412);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(108, 30);
             this.buttonClose.TabIndex = 0;
@@ -70,7 +76,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 356);
+            this.progressBar1.Location = new System.Drawing.Point(12, 412);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(224, 30);
             this.progressBar1.TabIndex = 2;
@@ -86,6 +92,7 @@
             this.radioLab1.Text = "Lab1";
             this.radioLab1.UseVisualStyleBackColor = true;
             this.radioLab1.CheckedChanged += new System.EventHandler(this.radioLab1_CheckedChanged);
+            this.radioLab1.Leave += new System.EventHandler(this.radioLab1_Leave);
             // 
             // radioLab2
             // 
@@ -110,6 +117,7 @@
             this.radioLab3.Text = "Lab3";
             this.radioLab3.UseVisualStyleBackColor = true;
             this.radioLab3.CheckedChanged += new System.EventHandler(this.radioLab3_CheckedChanged);
+            this.radioLab3.Leave += new System.EventHandler(this.radioLab3_Leave);
             // 
             // label1
             // 
@@ -194,22 +202,90 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.radioSpik8);
+            this.groupBox2.Controls.Add(this.textBoxSpik8);
+            this.groupBox2.Controls.Add(this.radioSpik7);
+            this.groupBox2.Controls.Add(this.textBoxSpik6);
+            this.groupBox2.Controls.Add(this.textBoxSpik7);
+            this.groupBox2.Controls.Add(this.radioSpik6);
             this.groupBox2.Controls.Add(this.radioSpik2);
             this.groupBox2.Controls.Add(this.textBoxSpik2);
             this.groupBox2.Controls.Add(this.radioSpik5);
             this.groupBox2.Controls.Add(this.textBoxSpik4);
             this.groupBox2.Controls.Add(this.textBoxSpik5);
             this.groupBox2.Controls.Add(this.radioSpik4);
-            this.groupBox2.Location = new System.Drawing.Point(13, 177);
+            this.groupBox2.Location = new System.Drawing.Point(13, 166);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(375, 106);
+            this.groupBox2.Size = new System.Drawing.Size(375, 189);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Wybierz serwer";
             // 
+            // radioSpik8
+            // 
+            this.radioSpik8.AutoSize = true;
+            this.radioSpik8.Checked = global::RestoreTDSnew.Properties.Settings.Default.test;
+            this.radioSpik8.Location = new System.Drawing.Point(14, 157);
+            this.radioSpik8.Name = "radioSpik8";
+            this.radioSpik8.Size = new System.Drawing.Size(91, 21);
+            this.radioSpik8.TabIndex = 18;
+            this.radioSpik8.TabStop = true;
+            this.radioSpik8.Text = "0008SPIK";
+            this.radioSpik8.UseVisualStyleBackColor = true;
+            this.radioSpik8.CheckedChanged += new System.EventHandler(this.radioSpik8_CheckedChanged);
+            // 
+            // textBoxSpik8
+            // 
+            this.textBoxSpik8.Enabled = false;
+            this.textBoxSpik8.Location = new System.Drawing.Point(118, 157);
+            this.textBoxSpik8.Name = "textBoxSpik8";
+            this.textBoxSpik8.Size = new System.Drawing.Size(238, 22);
+            this.textBoxSpik8.TabIndex = 17;
+            // 
+            // radioSpik7
+            // 
+            this.radioSpik7.AutoSize = true;
+            this.radioSpik7.Checked = global::RestoreTDSnew.Properties.Settings.Default.test;
+            this.radioSpik7.Location = new System.Drawing.Point(14, 129);
+            this.radioSpik7.Name = "radioSpik7";
+            this.radioSpik7.Size = new System.Drawing.Size(91, 21);
+            this.radioSpik7.TabIndex = 16;
+            this.radioSpik7.TabStop = true;
+            this.radioSpik7.Text = "0007SPIK";
+            this.radioSpik7.UseVisualStyleBackColor = true;
+            this.radioSpik7.CheckedChanged += new System.EventHandler(this.radioSpik7_CheckedChanged);
+            // 
+            // textBoxSpik6
+            // 
+            this.textBoxSpik6.Enabled = false;
+            this.textBoxSpik6.Location = new System.Drawing.Point(118, 102);
+            this.textBoxSpik6.Name = "textBoxSpik6";
+            this.textBoxSpik6.Size = new System.Drawing.Size(238, 22);
+            this.textBoxSpik6.TabIndex = 13;
+            // 
+            // textBoxSpik7
+            // 
+            this.textBoxSpik7.Enabled = false;
+            this.textBoxSpik7.Location = new System.Drawing.Point(118, 129);
+            this.textBoxSpik7.Name = "textBoxSpik7";
+            this.textBoxSpik7.Size = new System.Drawing.Size(238, 22);
+            this.textBoxSpik7.TabIndex = 15;
+            // 
+            // radioSpik6
+            // 
+            this.radioSpik6.AutoSize = true;
+            this.radioSpik6.Location = new System.Drawing.Point(15, 102);
+            this.radioSpik6.Name = "radioSpik6";
+            this.radioSpik6.Size = new System.Drawing.Size(91, 21);
+            this.radioSpik6.TabIndex = 14;
+            this.radioSpik6.TabStop = true;
+            this.radioSpik6.Text = "0006SPIK";
+            this.radioSpik6.UseVisualStyleBackColor = true;
+            this.radioSpik6.CheckedChanged += new System.EventHandler(this.radioSpik6_CheckedChanged);
+            // 
             // buttonRestore
             // 
-            this.buttonRestore.Location = new System.Drawing.Point(13, 305);
+            this.buttonRestore.Location = new System.Drawing.Point(13, 361);
             this.buttonRestore.Name = "buttonRestore";
             this.buttonRestore.Size = new System.Drawing.Size(375, 30);
             this.buttonRestore.TabIndex = 15;
@@ -221,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 403);
+            this.ClientSize = new System.Drawing.Size(402, 453);
             this.ControlBox = false;
             this.Controls.Add(this.buttonRestore);
             this.Controls.Add(this.groupBox2);
@@ -230,8 +306,8 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.buttonShrink);
             this.Controls.Add(this.buttonClose);
-            this.MaximumSize = new System.Drawing.Size(420, 450);
-            this.MinimumSize = new System.Drawing.Size(420, 450);
+            this.MaximumSize = new System.Drawing.Size(420, 500);
+            this.MinimumSize = new System.Drawing.Size(420, 500);
             this.Name = "Form1";
             this.Text = "Restore TDS";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -262,6 +338,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonRestore;
+        private System.Windows.Forms.RadioButton radioSpik7;
+        private System.Windows.Forms.TextBox textBoxSpik6;
+        private System.Windows.Forms.TextBox textBoxSpik7;
+        private System.Windows.Forms.RadioButton radioSpik6;
+        private System.Windows.Forms.RadioButton radioSpik8;
+        private System.Windows.Forms.TextBox textBoxSpik8;
     }
 }
 

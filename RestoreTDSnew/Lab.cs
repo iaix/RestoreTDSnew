@@ -40,16 +40,96 @@ namespace RestoreTDSnew
         }
 
 
+        public void SetLab1Activity()
+        {
+            ControlActivity.RadioSpik2_Active = true;
+            ControlActivity.RadioSpik4_Active = true;
+            ControlActivity.RadioSpik5_Active = true;
+            ControlActivity.RadioSpik6_Active = false;
+            ControlActivity.RadioSpik7_Active = false;
+            ControlActivity.RadioSpik8_Active = false;
+
+        }
+
+        public void SetLab2Activity()
+        {
+            ControlActivity.RadioSpik2_Active = true;
+            ControlActivity.RadioSpik4_Active = true;
+            ControlActivity.RadioSpik5_Active = true;
+            ControlActivity.RadioSpik6_Active = false;
+            ControlActivity.RadioSpik7_Active = false;
+            ControlActivity.RadioSpik8_Active = false;
+
+        }
+
+        public void SetLab3Activity()
+        {
+            ControlActivity.RadioSpik2_Active = true;
+            ControlActivity.RadioSpik4_Active = true;
+            ControlActivity.RadioSpik5_Active = true;
+            ControlActivity.RadioSpik6_Active = true;
+            ControlActivity.RadioSpik7_Active = true;
+            ControlActivity.RadioSpik8_Active = true;
+
+        }
+
         public void SetSpik2Activity()
         {
             ControlActivity.TextBoxSpik2_Active = true;
             ControlActivity.TextBoxSpik4_Active = false;
             ControlActivity.TextBoxSpik5_Active = false;
+            ControlActivity.TextBoxSpik6_Active = false;
+            ControlActivity.TextBoxSpik7_Active = false;
+            ControlActivity.TextBoxSpik8_Active = false;
         }
 
         public void SetSpik4Activity()
         {
-            throw new NotImplementedException();
+            ControlActivity.TextBoxSpik2_Active = false;
+            ControlActivity.TextBoxSpik4_Active = true;
+            ControlActivity.TextBoxSpik5_Active = false;
+            ControlActivity.TextBoxSpik6_Active = false;
+            ControlActivity.TextBoxSpik7_Active = false;
+            ControlActivity.TextBoxSpik8_Active = false;
+        }
+        public void SetSpik5Activity()
+        {
+            ControlActivity.TextBoxSpik2_Active = false;
+            ControlActivity.TextBoxSpik4_Active = false;
+            ControlActivity.TextBoxSpik5_Active = true;
+            ControlActivity.TextBoxSpik6_Active = false;
+            ControlActivity.TextBoxSpik7_Active = false;
+            ControlActivity.TextBoxSpik8_Active = false;
+        }
+
+        public void SetSpik6Activity()
+        {
+            ControlActivity.TextBoxSpik2_Active = false;
+            ControlActivity.TextBoxSpik4_Active = false;
+            ControlActivity.TextBoxSpik5_Active = false;
+            ControlActivity.TextBoxSpik6_Active = true;
+            ControlActivity.TextBoxSpik7_Active = false;
+            ControlActivity.TextBoxSpik8_Active = false;
+        }
+
+        public void SetSpik7Activity()
+        {
+            ControlActivity.TextBoxSpik2_Active = false;
+            ControlActivity.TextBoxSpik4_Active = false;
+            ControlActivity.TextBoxSpik5_Active = false;
+            ControlActivity.TextBoxSpik6_Active = false;
+            ControlActivity.TextBoxSpik7_Active = true;
+            ControlActivity.TextBoxSpik8_Active = false;
+        }
+
+        public void SetSpik8Activity()
+        {
+            ControlActivity.TextBoxSpik2_Active = false;
+            ControlActivity.TextBoxSpik4_Active = false;
+            ControlActivity.TextBoxSpik5_Active = false;
+            ControlActivity.TextBoxSpik6_Active = false;
+            ControlActivity.TextBoxSpik7_Active = false;
+            ControlActivity.TextBoxSpik8_Active = true;
         }
     }
 }

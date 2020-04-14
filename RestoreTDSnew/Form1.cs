@@ -56,13 +56,15 @@ namespace RestoreTDSnew
         {
             lab.WhichServer = 2;
             label1.Text = lab.WhichServer.ToString();
+            lab.SetSpik2Activity();
+            SetButtonActivity(lab.ControlActivity);
         }
 
         private void radioSpik4_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 4;
             label1.Text = lab.WhichServer.ToString();
-
+            lab.SetSpik4Activity();
             lab.pickServer();
         }
 
@@ -70,6 +72,13 @@ namespace RestoreTDSnew
         {
             lab.WhichServer = 5;
             label1.Text = lab.WhichServer.ToString();
+        }
+
+        private void SetButtonActivity(ControlActivity controlActivity)
+        {
+            textBoxSpik2.Enabled = controlActivity.TextBoxSpik2_Active;
+            textBoxSpik4.Enabled = controlActivity.TextBoxSpik4_Active;
+            textBoxSpik5.Enabled = controlActivity.TextBoxSpik5_Active;
         }
 
         private void buttonRestore_Click(object sender, EventArgs e)

@@ -8,6 +8,7 @@ namespace RestoreTDSnew
 {
     public class Lab
     {
+        public ControlActivity ControlActivity { get; set; } = new ControlActivity();
         public int WhichLab { get; set; }
         public int WhichServer { get; set; }
 
@@ -39,6 +40,17 @@ namespace RestoreTDSnew
         }
 
 
+        public void SetSpik2Activity()
+        {
+            ControlActivity.TextBoxSpik2_Active = true;
+            ControlActivity.TextBoxSpik4_Active = false;
+            ControlActivity.TextBoxSpik5_Active = false;
+        }
+
+        public void SetSpik4Activity()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

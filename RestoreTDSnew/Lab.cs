@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RestoreTDSnew
 {
@@ -22,7 +23,7 @@ namespace RestoreTDSnew
                     break;
                 case 3:
                     break;
-            }     
+            }
         }
 
         public void pickServer()
@@ -48,6 +49,7 @@ namespace RestoreTDSnew
             ControlActivity.RadioSpik6_Active = false;
             ControlActivity.RadioSpik7_Active = false;
             ControlActivity.RadioSpik8_Active = false;
+            SetAllSpikTextBoxesInactive();
 
         }
 
@@ -59,7 +61,7 @@ namespace RestoreTDSnew
             ControlActivity.RadioSpik6_Active = false;
             ControlActivity.RadioSpik7_Active = false;
             ControlActivity.RadioSpik8_Active = false;
-
+            SetAllSpikTextBoxesInactive();
         }
 
         public void SetLab3Activity()
@@ -70,66 +72,52 @@ namespace RestoreTDSnew
             ControlActivity.RadioSpik6_Active = true;
             ControlActivity.RadioSpik7_Active = true;
             ControlActivity.RadioSpik8_Active = true;
-
+            SetAllSpikTextBoxesInactive();
         }
 
         public void SetSpik2Activity()
         {
-            ControlActivity.TextBoxSpik2_Active = true;
-            ControlActivity.TextBoxSpik4_Active = false;
-            ControlActivity.TextBoxSpik5_Active = false;
-            ControlActivity.TextBoxSpik6_Active = false;
-            ControlActivity.TextBoxSpik7_Active = false;
-            ControlActivity.TextBoxSpik8_Active = false;
+            SetAllSpikTextBoxesInactive();
+            ControlActivity.SetTextBoxActivity(2, true);
         }
 
         public void SetSpik4Activity()
         {
-            ControlActivity.TextBoxSpik2_Active = false;
-            ControlActivity.TextBoxSpik4_Active = true;
-            ControlActivity.TextBoxSpik5_Active = false;
-            ControlActivity.TextBoxSpik6_Active = false;
-            ControlActivity.TextBoxSpik7_Active = false;
-            ControlActivity.TextBoxSpik8_Active = false;
+            SetAllSpikTextBoxesInactive();
+            ControlActivity.SetTextBoxActivity(4, true);
         }
         public void SetSpik5Activity()
         {
-            ControlActivity.TextBoxSpik2_Active = false;
-            ControlActivity.TextBoxSpik4_Active = false;
-            ControlActivity.TextBoxSpik5_Active = true;
-            ControlActivity.TextBoxSpik6_Active = false;
-            ControlActivity.TextBoxSpik7_Active = false;
-            ControlActivity.TextBoxSpik8_Active = false;
+            SetAllSpikTextBoxesInactive();
+            ControlActivity.SetTextBoxActivity(5, true);
         }
 
         public void SetSpik6Activity()
         {
-            ControlActivity.TextBoxSpik2_Active = false;
-            ControlActivity.TextBoxSpik4_Active = false;
-            ControlActivity.TextBoxSpik5_Active = false;
-            ControlActivity.TextBoxSpik6_Active = true;
-            ControlActivity.TextBoxSpik7_Active = false;
-            ControlActivity.TextBoxSpik8_Active = false;
+            SetAllSpikTextBoxesInactive();
+            ControlActivity.SetTextBoxActivity(6, true);
         }
 
         public void SetSpik7Activity()
         {
-            ControlActivity.TextBoxSpik2_Active = false;
-            ControlActivity.TextBoxSpik4_Active = false;
-            ControlActivity.TextBoxSpik5_Active = false;
-            ControlActivity.TextBoxSpik6_Active = false;
-            ControlActivity.TextBoxSpik7_Active = true;
-            ControlActivity.TextBoxSpik8_Active = false;
+            SetAllSpikTextBoxesInactive();
+            ControlActivity.SetTextBoxActivity(7, true);
         }
 
         public void SetSpik8Activity()
+        {
+            SetAllSpikTextBoxesInactive();
+            ControlActivity.SetTextBoxActivity(8, true);
+        }
+
+        private void SetAllSpikTextBoxesInactive()
         {
             ControlActivity.TextBoxSpik2_Active = false;
             ControlActivity.TextBoxSpik4_Active = false;
             ControlActivity.TextBoxSpik5_Active = false;
             ControlActivity.TextBoxSpik6_Active = false;
             ControlActivity.TextBoxSpik7_Active = false;
-            ControlActivity.TextBoxSpik8_Active = true;
+            ControlActivity.TextBoxSpik8_Active = false;
         }
     }
 }

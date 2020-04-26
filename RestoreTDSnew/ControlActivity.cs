@@ -36,7 +36,60 @@ namespace RestoreTDSnew
             RadioSpik6_Active = false;
             RadioSpik7_Active = false;
             RadioSpik8_Active = false;
+        }
 
+        public void SetTextBoxActivity(int spik, bool value)
+        {
+            switch (spik)
+            {
+                case 2:
+                    TextBoxSpik2_Active = value;
+                    break;
+                case 4:
+                    TextBoxSpik4_Active = value;
+                    break;
+                case 5:
+                    TextBoxSpik5_Active = value;
+                    break;
+                case 6:
+                    TextBoxSpik6_Active = value;
+                    break;
+                case 7:
+                    TextBoxSpik7_Active = value;
+                    break;
+                case 8:
+                    TextBoxSpik8_Active = value;
+                    break;
+                default:
+                    throw new ArgumentException();
+            }
+        }
+
+        public void SetRadioButtonActivity(int spik, bool value)
+        {
+            switch (spik)
+            {
+                case 2:
+                    RadioSpik2_Active = value;
+                    break;
+                case 4:
+                    RadioSpik2_Active = value;
+                    break;
+                case 5:
+                    RadioSpik2_Active = value;
+                    break;
+                case 6:
+                    RadioSpik2_Active = value;
+                    break;
+                case 7:
+                    RadioSpik2_Active = value;
+                    break;
+                case 8:
+                    RadioSpik2_Active = value;
+                    break;
+                default:
+                    throw new ArgumentException();
+            }
         }
     }
 }

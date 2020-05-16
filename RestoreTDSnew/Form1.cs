@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,12 +27,6 @@ namespace RestoreTDSnew
 
         private void SetButtonActivity(ControlActivity controlActivity)
         {
-            textBoxSpik2.Enabled = controlActivity.TextBoxSpik2_Active;
-            textBoxSpik4.Enabled = controlActivity.TextBoxSpik4_Active;
-            textBoxSpik5.Enabled = controlActivity.TextBoxSpik5_Active;
-            textBoxSpik6.Enabled = controlActivity.TextBoxSpik6_Active;
-            textBoxSpik7.Enabled = controlActivity.TextBoxSpik7_Active;
-            textBoxSpik8.Enabled = controlActivity.TextBoxSpik8_Active;
             radioSpik2.Enabled = controlActivity.RadioSpik2_Active;
             radioSpik4.Enabled = controlActivity.RadioSpik4_Active;
             radioSpik5.Enabled = controlActivity.RadioSpik5_Active;
@@ -39,7 +34,6 @@ namespace RestoreTDSnew
             radioSpik7.Enabled = controlActivity.RadioSpik7_Active;
             radioSpik8.Enabled = controlActivity.RadioSpik8_Active;
         }
-
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
@@ -60,6 +54,7 @@ namespace RestoreTDSnew
             SetButtonActivity(lab.ControlActivity);
         }
 
+
         private void radioLab2_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichLab = 2;
@@ -79,16 +74,14 @@ namespace RestoreTDSnew
         private void radioSpik2_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 2;
-            label1.Text = lab.WhichServer.ToString();
-            lab.SetSpik2Activity();
+            label2.Text = lab.WhichServer.ToString();
             SetButtonActivity(lab.ControlActivity);
         }
 
         private void radioSpik4_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 4;
-            label1.Text = lab.WhichServer.ToString();
-            lab.SetSpik4Activity();
+            label2.Text = lab.WhichServer.ToString();
             SetButtonActivity(lab.ControlActivity);
 
         }
@@ -96,40 +89,46 @@ namespace RestoreTDSnew
         private void radioSpik5_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 5;
-            label1.Text = lab.WhichServer.ToString();
-            lab.SetSpik5Activity();
+            label2.Text = lab.WhichServer.ToString();
             SetButtonActivity(lab.ControlActivity);
 
         }
         private void radioSpik6_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 6;
-            label1.Text = lab.WhichServer.ToString();
-            lab.SetSpik6Activity();
+            label2.Text = lab.WhichServer.ToString();
             SetButtonActivity(lab.ControlActivity);
         }
 
         private void radioSpik7_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 7;
-            label1.Text = lab.WhichServer.ToString();
-            lab.SetSpik7Activity();
+            label2.Text = lab.WhichServer.ToString();
             SetButtonActivity(lab.ControlActivity);
         }
 
         private void radioSpik8_CheckedChanged(object sender, EventArgs e)
         {
             lab.WhichServer = 8;
-            label1.Text = lab.WhichServer.ToString();
-            lab.SetSpik8Activity();
+            label2.Text = lab.WhichServer.ToString();
             SetButtonActivity(lab.ControlActivity);
         }
 
         private void buttonRestore_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Do zaimplementowania");
+            var filePicker = new FilePicker(lab.WhichLab, lab.WhichServer, comboBox1.SelectedItem.ToString());
+            label3.Text = filePicker.GetDataFromConfig();
+            filePicker.GetDataFromConfig();
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void buttonConfirm_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
